@@ -1,9 +1,10 @@
 package main.fourwheels;
 import main.Veicolo;
+import main.interfaces.Riparabile;
 
 import java.util.Objects;
 
-public class Auto extends Veicolo {
+public class Auto extends Veicolo implements Riparabile {
     private int numeroPorte;
 
     public int getNumeroPorte() {
@@ -12,6 +13,9 @@ public class Auto extends Veicolo {
 
     public void setNumeroPorte(int numeroPorte) {
         this.numeroPorte = numeroPorte;
+    }
+    public double calcolaCostoRiparazione(int oreLavoro){
+        return (oreLavoro * 45.0) + 100;
     }
 
     @Override

@@ -14,9 +14,7 @@ public class Camion extends Veicolo {
     public void setCapacitacarico(int capacitacarico) {
         this.capacitacarico = capacitacarico;
     }
-    public void faiRumore(){
 
-    }
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;

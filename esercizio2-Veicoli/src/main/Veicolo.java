@@ -1,4 +1,5 @@
 package main;
+import main.mechanics.Motore;
 
 import java.util.Objects;
 
@@ -7,6 +8,7 @@ public class Veicolo {
     private String marca;
     private String modello;
     private int numeroposti;
+    private Motore motore;
 
     public int getNumeroposti() {
         return numeroposti;
@@ -35,6 +37,9 @@ public class Veicolo {
 
     public void setTarga(String targa) {
         this.targa = targa;
+    }
+    public void faiRumore() {
+        System.out.println("Wrooom");
     }
 
     @Override
