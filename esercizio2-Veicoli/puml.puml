@@ -1,0 +1,101 @@
+@startuml
+class main.fourwheels.Camion {
+- int capacitacarico
++ int getCapacitacarico()
++ void setCapacitacarico(int)
+}
+
+
+class main.twowheels.Moto {
+- String tipo
++ String getTipo()
++ void setTipo(String)
++ double getCostoAssicurazione()
++ double calcolaCostoRiparazione(int)
++ void faiRumore()
+}
+
+
+interface main.interfaces.Assicurabile {
+~ double getCostoAssicurazione()
+}
+
+abstract class main.fourwheels.AutoElettrica {
+- int AutonomiaBatteria
++ double getAutonomiaBatteria()
++ void ricarica(int)
+}
+
+
+class main.Veicolo {
+- String targa
+- String marca
+- String modello
+- int numeroposti
+- Motore motore
++ int getNumeroposti()
++ void setNumeroposti(int)
++ String getModello()
++ String getMarca()
++ void setMarca(String)
++ String getTarga()
++ void setTarga(String)
++ void faiRumore()
+}
+
+
+class main.service.Officina {
+- List<Riparabile> veicoliInRiparazione
++ void accettaVeicolo(Riparabile)
++ void stampaSchedarioRiparazioni()
+}
+
+
+class main.service.AgenziaAssicurativa {
+- Set<Assicurabile> veicoliAssicurati
++ void aggiungiVeicolo(Assicurabile)
++ double calcolaIncassoTotale()
+}
+
+
+class Main {
++ {static} void main(String[])
+}
+
+class main.fourwheels.Auto {
+- int numeroPorte
++ int getNumeroPorte()
++ void setNumeroPorte(int)
++ double calcolaCostoRiparazione(int)
+}
+
+
+interface main.interfaces.VeicoloElettrico {
+~ double getAutonomiaBatteria()
++ void ricarica()
+}
+
+interface main.interfaces.Riparabile {
+~ double calcolaCostoRiparazione(int)
+}
+
+class main.mechanics.Motore {
+- int serie
+- String modello
+}
+
+
+
+main.Veicolo <|-- main.fourwheels.Camion
+main.interfaces.Assicurabile <|.. main.twowheels.Moto
+main.interfaces.Riparabile <|.. main.twowheels.Moto
+main.Veicolo <|-- main.twowheels.Moto
+main.interfaces.VeicoloElettrico <|.. main.fourwheels.AutoElettrica
+main.fourwheels.Auto <|-- main.fourwheels.AutoElettrica
+main.interfaces.Riparabile <|.. main.fourwheels.Auto
+main.Veicolo <|-- main.fourwheels.Auto
+Main --> main.fourwheels.Camion
+Main --> main.twowheels.Moto
+Main --> main.service.Officina
+Main --> main.service.AgenziaAssicurativa
+@enduml

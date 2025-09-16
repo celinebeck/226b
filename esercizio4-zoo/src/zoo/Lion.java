@@ -1,0 +1,24 @@
+package zoo;
+
+public class Lion extends Mammal implements Feedable{
+    //attributi
+    //costruttore
+    public Lion(String name, int age, boolean hasFur) {
+        super(name, age, hasFur);
+    }
+    //metodi
+   public void eat(String food){
+        System.out.println("eats: " + food);
+    }
+    @Override
+    public String makeSound(){
+        return "roar";
+    }
+    //metodi base
+
+
+    @Override
+    public String toString() {
+        return super.getName()+" "+ super.getAge() ;
+    }
+}

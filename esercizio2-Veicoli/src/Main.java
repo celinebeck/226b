@@ -17,6 +17,7 @@ public class Main {
         Riparabile rip;
         Assicurabile ass;
         miaOfficina.accettaVeicolo(miaAuto);
+        miaOfficina.accettaVeicolo(miaMoto);
         miaAssicurativa.aggiungiVeicolo(miaMoto);
         System.out.println(miaAuto.calcolaCostoRiparazione(2));
         System.out.println(miaMoto.getCostoAssicurazione());
