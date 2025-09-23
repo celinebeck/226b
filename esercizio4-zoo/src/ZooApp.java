@@ -1,6 +1,8 @@
-import zoo.Elephant;
-import zoo.Lion;
-import zoo.Parrot;
+import zoo.*;
+
+import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ZooApp {
     public static void main(String[] args) {
@@ -12,6 +14,20 @@ public class ZooApp {
 
         Parrot p1 = new Parrot("Par1",1,false);
         Parrot p2 = new Parrot("Par2",3,false);
+        List<Feedable> animals = new ArrayList<>();
+
+        animals.add(l1);
+        animals.add(l2);
+        animals.add(e1);
+        animals.add(e2);
+        animals.add(p1);
+        animals.add(p2);
+
+        for (Feedable a : animals) {
+            a.eat("cibo");
+        }
+
+
         System.out.println(l1);
         System.out.println(l2);
         System.out.println(e1);
@@ -26,11 +42,5 @@ public class ZooApp {
         System.out.println(p1.makeSound());
         System.out.println(p2.makeSound());
 
-        l1.eat("Grass");
-        l2.eat("Carrot");
-        e1.eat("Apple");
-        e2.eat("Grass");
-        p1.eat("Banana");
-        p2.eat("Grass");
         }
     }

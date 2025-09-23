@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Ebook extends DigitalContent{
     //attributi
     private Genre genre;
@@ -24,4 +26,30 @@ public class Ebook extends DigitalContent{
     }
     //metodi base
 
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Ebook ebook = (Ebook) o;
+        return pageCount == ebook.pageCount && isllustrated == ebook.isllustrated && genre == ebook.genre;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), genre, pageCount, isllustrated);
+    }
+
+    @Override
+    public String toString() {
+        return "Ebook{" +
+                "id=" + getId() +
+                ", title='" + getTitle() + '\'' +
+                ", author='" + getAuthor() + '\'' +
+                ", basePrice=" + getBasePrice() +
+                ", currentDiscount=" + getCurrentDiscount() +
+                "genre=" + genre +
+                ", pageCount=" + pageCount +
+                ", isllustrated=" + isllustrated +
+                '}';
+    }
 }

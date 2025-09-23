@@ -1,0 +1,92 @@
+@startuml
+class Main {
++ {static} void main(String[])
+}
+
+class AudioBook {
+- String narrator
+- int duration
+- String language
++ String DigitalContent()
++ String getDescription()
++ String getFormattedDuration()
++ float calculatePrice()
+}
+
+
+abstract class DigitalContent {
+- int id
+- String title
+- String author
+- float basePrice
+- float currentDiscount
++ {abstract}String DigitalContent()
++ {abstract}String getDescription()
++ float calculatePrice()
++ void applyDiscount(double)
+}
+
+
+class OnlineCourse {
+- String instructor
+- Enum difficulty
+- int estimatedHours
++ String DigitalContent()
++ String getDescription()
++ boolean getCertificationEligible()
+}
+
+
+enum Difficulty {
++  BEGINNER
++  INTERMEDIATE
++  ADVANCED
+}
+
+class DigitalMagazine {
+- int issueNumber
+- LocalDate publicationDate
+- String category
++ String DigitalContent()
++ String getDescription()
++ String isRecentIssue()
+}
+
+
+interface Purchasable {
+~ float calculatePrice()
+~ void applyDiscount(double)
+~ {static} float getDefaultTaxRate()
+~ float getPriceWithTax()
+}
+
+class Ebook {
+- Genre genre
+- int pageCount
+- boolean isllustrated
++ String DigitalContent()
++ String getDescription()
++ float getReadingTime()
+}
+
+
+enum Genre {
++  FICTION
++  NON_FICTION
++  BIOGRAPHY
++  SCIENCE
++  TECHNOLOGY
+}
+
+
+
+DigitalContent <|-- AudioBook
+Purchasable <|.. DigitalContent
+DigitalContent <|-- OnlineCourse
+DigitalContent <|-- DigitalMagazine
+DigitalContent <|-- Ebook
+Main --> DigitalContent
+Main --> Purchasable
+Difficulty <-- OnlineCourse
+Genre <-- Ebook
+@enduml
