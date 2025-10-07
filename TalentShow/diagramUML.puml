@@ -1,0 +1,74 @@
+@startuml
+interface ch.samt.talentshow.Show {
+~ void descriptionShow()
+~ float finalVote()
+}
+
+class ch.samt.talentshow.model.Person {
+- String name
+- int age
+- Category category
+- Level level
+- String showName
++ String getName()
++ void setName(String)
++ int getAge()
++ void setAge(int)
++ Category getCategory()
++ void setCategory(Category)
++ Level getLevel()
++ void setLevel(Level)
++ String getShowName()
++ void setShowName(String)
++ boolean equals(Object)
++ int hashCode()
++ String toString()
+}
+
+
+class ch.samt.talentshow.model.Magician {
++ void descriptionShow()
++ float finalVote()
+}
+
+enum ch.samt.talentshow.enumerator.Level {
++  BEGINNER
++  INTERMEDIATE
++  PROFESSIONAL
+}
+
+enum ch.samt.talentshow.enumerator.Category {
++  SINGER
++  DANCER
++  MAGICIAN
+}
+
+class ch.samt.talentshow.Main {
++ {static} void main(String[])
+}
+
+class ch.samt.talentshow.model.Dancer {
++ void descriptionShow()
++ float finalVote()
+}
+
+class ch.samt.talentshow.model.Singer {
++ void descriptionShow()
++ float finalVote()
+}
+
+
+
+ch.samt.talentshow.Show <|.. ch.samt.talentshow.model.Magician
+ch.samt.talentshow.model.Person <|-- ch.samt.talentshow.model.Magician
+ch.samt.talentshow.Show <|.. ch.samt.talentshow.model.Dancer
+ch.samt.talentshow.model.Person <|-- ch.samt.talentshow.model.Dancer
+ch.samt.talentshow.Show <|.. ch.samt.talentshow.model.Singer
+ch.samt.talentshow.model.Person <|-- ch.samt.talentshow.model.Singer
+ch.samt.talentshow.model.Person --> ch.samt.talentshow.enumerator.Category
+ch.samt.talentshow.model.Person --> ch.samt.talentshow.enumerator.Level
+ch.samt.talentshow.Main --> ch.samt.talentshow.model.Dancer
+ch.samt.talentshow.Main --> ch.samt.talentshow.model.Singer
+ch.samt.talentshow.Main --> ch.samt.talentshow.model.Magician
+ch.samt.talentshow.Main --> ch.samt.talentshow.Show
+@enduml
