@@ -45,10 +45,27 @@ public class RestaurantManager {
         for (String cliente : ordini.keySet()) {
             System.out.println("- "+cliente);
         }
-        System.out.println("\nTempo medio di preparazione: "+totMedia+" minuti");
+        printPopular();
+        System.out.println("Tempo medio di preparazione: "+totMedia+" minuti");
         System.out.println("=============================================");
         System.out.println("FATTURATO TOTALE: €"+fatture);
 
+    }
+    public void printPopular() {
+        HashMap<String, Integer> popular = new HashMap<>();
+        for (Map.Entry<String, MenuItem> ordine : ordini.entrySet()) {
+            String nome = ordine.getValue().getName();
+            popular.put(nome, popular.getOrDefault(nome, 0) + 1);
+        }
+        int max = 0;
+        String piattoPiuPopolare = "";
+        for (Map.Entry<String, Integer> entry : popular.entrySet()) {
+            if (entry.getValue() > max) {
+                max = entry.getValue();
+                piattoPiuPopolare = entry.getKey();
+            }
+        }
+        System.out.println("\nPiatto più popolare: " + piattoPiuPopolare + " (" + max + " ordini)");
     }
     //metodi base
 
