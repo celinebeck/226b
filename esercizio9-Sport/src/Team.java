@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Team implements Comparable<Team>{
     //attributi
     private String name;
@@ -49,9 +51,23 @@ public class Team implements Comparable<Team>{
     //metodi
     @Override
     public int compareTo(Team o) {
-        return this.name.compareTo(o.name);
+        return Integer.compare(o.score,this.score);
+//        o.score.compareTo(this.score); -> compareto non va bene per int
     }
     //metodi base
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Team team = (Team) o;
+        return Objects.equals(name, team.name) && Objects.equals(schoolName, team.schoolName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, schoolName);
+    }
 
     @Override
     public String toString() {

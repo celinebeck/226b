@@ -1,0 +1,44 @@
+@startuml
+class Team {
+- String name
+- String schoolName
+- String sport
+- int score
++ int compareTo(Team)
+}
+
+
+class ComparatorSchoolName {
++ int compare(Team,Team)
+}
+
+class ComparatorSport {
++ int compare(Team,Team)
+}
+
+class TournamentManager {
+- ArrayList<Team> teams
+- HashMap<Team,Integer> teamsScore
++ void addTeam(Team)
++ void updateScore(Team,int)
++ void printTeamsSortedByNatural()
++ void printTeamsSortedBySchool()
++ void printTeamsSortedBySport()
++ void printScores()
+}
+
+
+class Main {
++ {static} void main(String[])
+}
+
+
+
+Java.Lang.Comparable <|.. Team
+Main <-- Team
+Main <-- TournamentManager
+ComparatorSchoolName <-- TournamentManager
+ComparatorSport <-- TournamentManager
+java.util.Comparator <|.. ComparatorSchoolName
+java.util.Comparator <|.. ComparatorSport
+@enduml

@@ -10,6 +10,7 @@ public class TournamentManager {
     //costruttore
     public TournamentManager() {
         teamsScore = new HashMap<>();
+        teams = new ArrayList<>();
     }
     //metodi
     public void addTeam(Team team) {
