@@ -60,12 +60,10 @@ public class WeatherData {
 
     @Override
     public String toString() {
-        return "WeatherData{" +
-                "city='" + city + '\'' +
-                ", date=" + date +
-                ", temperature=" + temperature +
-                ", precipitation=" + precipitation +
-                ", humidity=" + humidity +
-                '}';
+        return  city + '\'' +
+                "- " + date +
+                " - " + temperature +
+                " °C -" + precipitation +
+                "- Umidita:" + humidity;
     }
 }

@@ -24,11 +24,13 @@ public class WeatherAnalyzer {
         System.out.println("1. GIORNI CON TEMPERATURA > 25°C (CALDO):");
         weatherData.stream()
                 .filter(d -> d.getTemperature() > 25)
-                .forEach(System.out::println);
+                .forEach((data)->System.out.println(data.getTemperature()+"°C - "+data.getCity()+" - "+data.getDate()));
+        System.out.println();
         System.out.println("2. DATI ORDINATI PER TEMPERATURA (dal più caldo):");
         weatherData.stream()
                 .sorted(Comparator.comparingDouble(WeatherData::getTemperature).reversed())
-                .forEach(System.out::println);
+                .forEach((data)->System.out.println(data.getTemperature()+"°C - "+data.getCity()+" - "+data.getDate()));
+        System.out.println();
         System.out.println("3. CITTA' CON PRECIPITAZIONI > 10mm (PIOGGIA INTENSA):");
         weatherData.stream()
                 .filter(d -> d.getPrecipitation() > 10)
@@ -36,14 +38,22 @@ public class WeatherAnalyzer {
                 .forEach(System.out::println);
         Optional<WeatherData> max = weatherData.stream()
                 .max(Comparator.comparingDouble(WeatherData::getTemperature));
+        System.out.println();
+        System.out.println("4.TEMP MASSIMA: ");
         if (max.isPresent()) {
             System.out.println(max.get().toString());
         }
-
+        System.out.println("TEMP MINIMA: ");
         Optional<WeatherData> min =weatherData.stream()
                 .min(Comparator.comparingDouble(WeatherData::getTemperature));
         if (min.isPresent()) {
             System.out.println(min.get().toString());
         }
+        System.out.println();
+        System.out.println("5. GIORNI ESTIVI CON UMIDITA' < 50% (CLIMA SECCO):");
+        weatherData.stream()
+                .filter(d -> d.getHumidity() < 50)
+                .filter(d -> d.getDate().getMonthValue()  > 5 && d.getDate().getMonthValue() < 9)
+                .forEach((data) -> System.out.println(data.getCity()+" - "+data.getDate()+ " - Umidita: "+ data.getHumidity()+ "%"));
     }
 }
