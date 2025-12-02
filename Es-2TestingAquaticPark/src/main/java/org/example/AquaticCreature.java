@@ -1,3 +1,5 @@
+package org.example;
+
 public abstract class AquaticCreature implements CratureBase {
     private int food;
     private int energy;

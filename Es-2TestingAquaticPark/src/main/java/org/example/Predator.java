@@ -1,3 +1,5 @@
+package org.example;
+
 public abstract class Predator extends AquaticCreature {
     //attributi
     private int ferocity;

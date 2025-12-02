@@ -1,0 +1,87 @@
+@startuml
+enum Sector {
++  CURVE
++  GRANDSTAND
+}
+
+interface AllTickets {
+~ double calculateTicketPrice()
+~ void sellTicket()
+~ boolean isSold()
+~ String getEventType()
+~ String getTicketCode()
+~ String getEventName()
+~ String getTicketDescription()
+}
+
+class Ticket {
+- String ticketCode
+- String eventName
+- String date
+- String place
+- int seatNumber
+- boolean Sold
++ double calculateTicketPrice()
++ void sellTicket()
++ String getEventType()
++ String getTicketDescription()
+}
+
+
+class TicketManager {
+- List<AllTickets> listTickets
++ void addTicket(AllTickets)
++ void printTickets()
++ void sellTickets(AllTickets)
++ void availableTickets()
++ void totalPrice()
++ void forEvent(String)
++ void orderList()
++ void orderByType(String)
++ void getAverage()
+}
+
+
+class TicketSport {
+- Sector sector
++ double calculateTicketPrice()
++ String getEventType()
++ String getTicketDescription()
+}
+
+
+class Main {
++ {static} void main(String[])
+}
+
+class TikcetTheater {
+- String showTitle
+- int row
+- boolean studentDiscount
++ double calculateTicketPrice()
++ String getEventType()
++ String getTicketDescription()
+}
+
+
+class TicketConcert {
+- Sector sector
+- String mainArtist
++ double calculateTicketPrice()
++ String getEventType()
++ String getTicketDescription()
+}
+
+
+
+Sector <-- TicketSport
+Sector <-- TicketConcert
+AllTickets <|.. Ticket
+Ticket <|-- TicketSport
+Ticket <|-- TikcetTheater
+Ticket <|-- TicketConcert
+Main --> TicketManager
+Main --> TicketSport
+Main --> TikcetTheater
+Main --> TicketConcert
+@enduml

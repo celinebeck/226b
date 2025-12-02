@@ -1,3 +1,5 @@
+package org.example;
+
 public class Dolphin extends Predator{
     //attributi
     private int intelligence;

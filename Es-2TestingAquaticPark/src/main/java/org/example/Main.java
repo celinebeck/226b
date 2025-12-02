@@ -1,12 +1,14 @@
+package org.example;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class MarineEcosystemSimulator {
+public class Main {
     public static void main(String[] args) {
         Shark s1 = new Shark(50, 80, 25, "Great White", 12, 90);
         Shark s2 = new Shark(30, 60, 20, "Hammerhead", 8, 75);
 
-        Jellyfish j1 = new Jellyfish(5, 10, 10, "Moon Jellyfish", 1);
-        Jellyfish j2 = new Jellyfish(8, 25, 12, "Box Jellyfish", 2);
+        Jellyfish j1 = new Jellyfish(5, 10, 10, "Moon org.example.Jellyfish", 1);
+        Jellyfish j2 = new Jellyfish(8, 25, 12, "Box org.example.Jellyfish", 2);
 
         HerbivorousFish f1 = new HerbivorousFish(15, 50, 18, "Parrotfish", 4);
         HerbivorousFish f2 = new HerbivorousFish(12, 45, 15, "Surgeonfish", 3);
