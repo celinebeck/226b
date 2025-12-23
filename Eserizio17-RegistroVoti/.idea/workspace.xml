@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="06bc8fa3-d50c-4c13-94d3-35f15ff610df" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Esercizio16-CassaSupermercato/src/main/java/org/example/CashierStatistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Esercizio16-CassaSupermercato/src/main/java/org/example/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Esercizio16-CassaSupermercato/src/main/java/org/example/SupermarketSimulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/GradeRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Thread/src/main/java/org/example/Esercizio15c.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/src/main/java/org/example/Esercizio15b.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/src/main/java/org/example/Esercizio15b.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="37EoJJ1XEt23jcVIEqjdWrgQeHU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.All in Eserizio17-RegistroVoti.executor": "Coverage",
+    "JUnit.TestMain.TestAverageGrade.executor": "Run",
+    "JUnit.TestMain.TestCountGrades.executor": "Run",
+    "JUnit.TestMain.TestMain.executor": "Run",
+    "JUnit.TestMain.TestSumAnna.executor": "Run",
+    "JUnit.TestMain.TestSumRossi.executor": "Run",
+    "JUnit.TestMain.executor": "Run",
+    "JUnit.TestMain.testRegisterMain.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "//Cpt.local/shares/homes/allievi/SAM/IN/_folder-redir/ikv170/My Documents/GitHub/226b/Eserizio17-RegistroVoti/src/main/java/org/example/Main.java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.All in Eserizio17-RegistroVoti">
+    <configuration name="All in Eserizio17-RegistroVoti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Eserizio17-RegistroVoti" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMain.TestCountGrades" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Eserizio17-RegistroVoti" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestMain" />
+      <option name="METHOD_NAME" value="TestCountGrades" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMain.TestSumAnna" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Eserizio17-RegistroVoti" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestMain" />
+      <option name="METHOD_NAME" value="TestSumAnna" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMain.TestSumRossi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Eserizio17-RegistroVoti" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestMain" />
+      <option name="METHOD_NAME" value="TestSumRossi" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMain.testRegisterMain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Eserizio17-RegistroVoti" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestMain" />
+      <option name="METHOD_NAME" value="testRegisterMain" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in Eserizio17-RegistroVoti" />
+        <item itemvalue="JUnit.TestMain.testRegisterMain" />
+        <item itemvalue="JUnit.TestMain.TestCountGrades" />
+        <item itemvalue="JUnit.TestMain.TestSumAnna" />
+        <item itemvalue="JUnit.TestMain.TestSumRossi" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="06bc8fa3-d50c-4c13-94d3-35f15ff610df" name="Changes" comment="" />
+      <created>1766477522017</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766477522017</updated>
+      <workItem from="1766477522955" duration="7738000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Eserizio17_RegistroVoti$All_in_Eserizio17_RegistroVoti.ic" NAME="All in Eserizio17-RegistroVoti Coverage Results" MODIFIED="1766484843084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+</project>

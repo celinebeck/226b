@@ -6,27 +6,41 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Esercizio15b {
     int thread = 1;
-    BankAccount account;
+    BankAccount account = new BankAccount();
     ExecutorService executor = Executors.newFixedThreadPool(2);
-        executor.submit(() -> account.versa()());
-        executor.submit(() -> timeCounter());
-        executor.shutdown();
 
+    public static void main(String[] args) {
+        Esercizio15b esercizio = new Esercizio15b();
+        esercizio.start();
+
+    }
+
+    public void start() {
+        executor.submit(() -> account.versa(20));
+        executor.submit(() -> account.preleva(10));
+        executor.shutdown();
+    }
 
 }
+
 class BankAccount {
-    private AtomicInteger conto = new AtomicInteger(0);
+    private int conto = 0;
 
     //aggiungendo synchronized per farlo arrivare a mille
-    public void versa(int quanto) {
+    public synchronized void versa(int quanto) {
         for (int i = 0; i < quanto; i++) {
-            conto.incrementAndGet();
+            conto++;
+            System.out.println(conto);
         }
     }
 
-    public void preleva(int quanto) {
+    public synchronized void preleva(int quanto) {
         for (int i = 0; i < quanto; i++) {
-            conto.decrementAndGet();
+            conto--;
+            System.out.println(conto);
         }
+    }
+    public int getConto() {
+        return conto;
     }
 }
