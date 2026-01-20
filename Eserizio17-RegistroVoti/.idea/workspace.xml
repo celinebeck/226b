@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06bc8fa3-d50c-4c13-94d3-35f15ff610df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Esercizio16-CassaSupermercato/src/main/java/org/example/CashierStatistics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Esercizio16-CassaSupermercato/src/main/java/org/example/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Esercizio16-CassaSupermercato/src/main/java/org/example/SupermarketSimulator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/GradeRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Thread/src/main/java/org/example/Esercizio15c.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Thread/src/main/java/org/example/Esercizio15b.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/src/main/java/org/example/Esercizio15b.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test3_celinebeck/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test3_celinebeck/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,39 +24,39 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="37EoJJ1XEt23jcVIEqjdWrgQeHU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.All in Eserizio17-RegistroVoti.executor": "Coverage",
-    "JUnit.TestMain.TestAverageGrade.executor": "Run",
-    "JUnit.TestMain.TestCountGrades.executor": "Run",
-    "JUnit.TestMain.TestMain.executor": "Run",
-    "JUnit.TestMain.TestSumAnna.executor": "Run",
-    "JUnit.TestMain.TestSumRossi.executor": "Run",
-    "JUnit.TestMain.executor": "Run",
-    "JUnit.TestMain.testRegisterMain.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "//Cpt.local/shares/homes/allievi/SAM/IN/_folder-redir/ikv170/My Documents/GitHub/226b/Eserizio17-RegistroVoti/src/main/java/org/example/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in Eserizio17-RegistroVoti.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.TestMain.TestAverageGrade.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestMain.TestCountGrades.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestMain.TestMain.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestMain.TestSumAnna.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestMain.TestSumRossi.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestMain.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestMain.testRegisterMain.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;//Cpt.local/shares/homes/allievi/SAM/IN/_folder-redir/ikv170/My Documents/GitHub/226b/Eserizio17-RegistroVoti/src/main/java/org/example/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.All in Eserizio17-RegistroVoti">
     <configuration name="All in Eserizio17-RegistroVoti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Eserizio17-RegistroVoti" />
@@ -142,6 +132,7 @@
       <option name="presentableId" value="Default" />
       <updated>1766477522017</updated>
       <workItem from="1766477522955" duration="7738000" />
+      <workItem from="1768288937800" duration="355000" />
     </task>
     <servers />
   </component>
